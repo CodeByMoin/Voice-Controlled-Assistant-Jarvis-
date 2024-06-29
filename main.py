@@ -18,7 +18,7 @@ def speak(text):
 
 # Function for AI interaction using generative AI
 def ai_process(command):
-    genai.configure(api_key="AIzaSyBu-gDKnUkpPIQNcuO6IYck-8y0HXTV22A")
+    genai.configure(api_key="YOUR_API_KEY")
 
     # Configuration for AI model generation
     generation_config = {
@@ -48,7 +48,6 @@ def ai_process(command):
 
         # Listening for user's next command
         with sr.Microphone() as source:
-            recognizer.adjust_for_ambient_noise(source)
             print("Listening...")
             audio = recognizer.listen(source)
             print("Recognizing...")
@@ -71,7 +70,7 @@ def ai_process(command):
 
 # Function to fetch and speak weather information
 def get_weather(location):
-    api_key = "0556eaaf4a67643fad3f63570015a807"
+    api_key = "YOUR_API_KEY"
     if not api_key:
         error_message = "Weather API key is not set."
         print(error_message)
