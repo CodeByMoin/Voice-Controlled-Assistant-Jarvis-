@@ -18,7 +18,7 @@ def speak(text):
 
 # Function for AI interaction using generative AI
 def ai_process(command):
-    genai.configure(api_key="YOUR_API_KEY")
+    genai.configure(api_key="YOUR_GEN_AI_API_KEY")
 
     # Configuration for AI model generation
     generation_config = {
@@ -70,7 +70,7 @@ def ai_process(command):
 
 # Function to fetch and speak weather information
 def get_weather(location):
-    api_key = "YOUR_API_KEY"
+    api_key = "YOUR_WEATHER_API_KEY"
     if not api_key:
         error_message = "Weather API key is not set."
         print(error_message)
@@ -144,7 +144,7 @@ def process_command(command):
 
     # Fetching and speaking news headlines
     elif "news" in command:
-        req = requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=YOUR_API_KEY")
+        req = requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=YOUR_NEWS_API_KEY")
         if req.status_code == 200:
             news_data = req.json()
             articles = news_data.get('articles', [])
