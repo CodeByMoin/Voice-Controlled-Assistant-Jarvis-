@@ -22,6 +22,20 @@ This project implements a voice-controlled assistant using Python, integrating v
   - requests
   - google.generativeai
   - (Ensure dependencies are installed, e.g., `pip install -r requirements.txt`)
+ 
+- Obtaining API Keys
+1. Google Generative AI API [Google AI Studio](https://ai.google.dev/aistudio)
+  Visit Google AI Studio and sign in with your Google account.
+  Navigate to the Generative AI section and create a new project.
+  Obtain the API key and replace "YOUR_GEN_AI_API_KEY" in ai_process function with your actual API key.
+2. OpenWeatherMap API
+  Sign up for a free account on [OpenWeatherMap](https://openweathermap.org/).
+  After registration, obtain the API key from your account dashboard.
+  Replace "YOUR_WEATHER_API_KEY" in get_weather function with your actual API key.
+3. News API
+  Register for a free API key at [NewsAPI](https://newsapi.org/).
+  Copy your API key from the dashboard.
+  Replace "YOUR_NEW_API_KEY" in process_command function where fetching news headlines with your actual API key.
 
 - Usage :-
 
