@@ -144,7 +144,7 @@ def process_command(command):
 
     # Fetching and speaking news headlines
     elif "news" in command:
-        req = requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=f062292942e6411cb7c447c91568f217")
+        req = requests.get("https://newsapi.org/v2/top-headlines?country=in&apiKey=YOUR_API_KEY")
         if req.status_code == 200:
             news_data = req.json()
             articles = news_data.get('articles', [])
