@@ -41,7 +41,7 @@ This project implements a voice-controlled assistant using Python, integrating v
 
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/voice-controlled-assistant.git
+   git clone https://github.com/CodeByMoin/Voice-Controlled-Assistant-Jarvis-.git
    cd voice-controlled-assistant
    ```
 
